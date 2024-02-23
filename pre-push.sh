@@ -3,8 +3,8 @@
 # Get the local branch name
 current_branch=$(git rev-parse --abbrev-ref HEAD)
 
-# Check if the current branch is main
-if [ "$current_branch" != "main" ]; then
+# Check if the current branch is master
+if [ "$current_branch" != "master" ]; then
     echo "Skipping pre-push hook as you are not on the main branch."
     exit 0
 fi
